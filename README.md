@@ -3,14 +3,14 @@ A home should provide a comfortable living space for humans. However, it can pos
 
 This Proof-of-Concept leverages Google Home Matter technology to create a universal remote-control device capable of managing all devices within a home. This remote-control device can be either a mobile phone or a voice assistant device. It enables control over various smart home devices, including light bulbs, TVs, and other appliances.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://github.com/teamprof/github-we2-doorbell/blob/main/LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://github.com/teamprof/build2gether-smart-home/blob/main/LICENSE)
 
 <a href="https://www.buymeacoffee.com/teamprof" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;width: 108px !important;" ></a>
 
 
 ## Sponsors
 This project is sponsored by the following suppliers via [hackster.io](https://www.hackster.io/), please buy products from them for supporting this project. 
-1. [DFRobot](https://www.hackster.io/dfrobot) 
+1. [DFRobot](https://www.dfrobot.com/product-2691.html?tracking=JZ0c5qdqkSMzZf7V20UyvfyLkVEQSPemvsQ26eKPAHmqNm1VDnMxmhkYbBMoV5dn) 
 2. [Seeed Studio](https://www.hackster.io/seeed)
 3. [Blues](https://www.hackster.io/blues-wireless)
 4. [Nordic Semiconductor](https://www.hackster.io/nordic-semiconductor)
@@ -21,8 +21,8 @@ This project is sponsored by the following suppliers via [hackster.io](https://w
 
 ## Hardware
 1. [DFRobot UNIHIKER](https://www.unihiker.com/): Central home panel
-2. [XIAO ESP32S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html): Matter device
-3. [nRF52840 DK](https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK): BLE device
+2. [XIAO ESP32S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html): Matter device - WS2812 LED
+3. [nRF52840 DK](https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK): BLE device - TCL USB lamp
 4. [WS2812 LED module](https://www.aliexpress.com/item/1005006524124823.html)
 5. [USB LED light](https://m.tb.cn/h.gObRwlZaGCvrZLJ?tk=QUZx3VGt8aU)
 6. [Si2302 MOSFET](https://www.aliexpress.com/item/4001032242217.html)
@@ -182,7 +182,7 @@ The nRF52840 application leverages ArduProf (https://github.com/teamprof/ardupro
 
 ### Contributions and Thanks
 Many thanks to the following companies who sponsor https://www.hackster.io
-1. [DFRobot](https://www.hackster.io/dfrobot)
+1. [DFRobot](https://www.dfrobot.com/product-2691.html?tracking=JZ0c5qdqkSMzZf7V20UyvfyLkVEQSPemvsQ26eKPAHmqNm1VDnMxmhkYbBMoV5dn)
 2. [Seeed Studio](https://www.hackster.io/seeed)
 3. [Blues](https://www.hackster.io/blues-wireless)
 4. [Nordic Semiconductor](https://www.hackster.io/nordic-semiconductor)
