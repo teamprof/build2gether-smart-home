@@ -172,13 +172,12 @@ There are two libraries used in the Python code running on UNIHIKER. The first o
 In main.py, it spawns three tasks: AppGui, AppServerTcp, and AppClientBle for handling the GUI, WiFi/TCP connection, and BLE connection respectively. AppGui includes two components, LampEspWidget and LampNrfWidget, for controlling the ESP32S3 and nRF52840 respectively. Once user clicks the lamp icon in the widget, it sends an event to AppGui. AppGui forwards the event to main, which routes the event to AppServerTcp or AppClientBle for sending it via WiFi or BLE correspondingly.
 
 
-## Nordic nRF52840 DK lamp (BLE device)
-The nRF52840 application leverages ArduProf (https://github.com/teamprof/arduprof) library to provide a generic message communication framework between the MainTask and BLE callbacks. For example, once BLE LED characteristic is written, the "onLedChrcWrite" callback is involved and it sends an event to MainTask by "MainTask::getInstance()->postEvent(...)"
-
-
 ## SEEED XIAO ESP32S3 Sense lamp (Matter device)
 The ESP32S3 application leverages ArduProf (https://github.com/teamprof/arduprof) library to provide a generic message communication framework between the main (QueueMain) and ThreadPanel. QueueMain handles Matter event for Google Home while ThreadPanel handles WiFi/TCP event for UNIHIKER. Once event is received, QueueMain/ThreadPanel routes it to LightDevice to proceed the actual lamp operations (e.g. off/white/yellow/red).
 
+
+## Nordic nRF52840 DK lamp (BLE device)
+The nRF52840 application leverages ArduProf (https://github.com/teamprof/arduprof) library to provide a generic message communication framework between the MainTask and BLE callbacks. For example, once BLE LED characteristic is written, the "onLedChrcWrite" callback is involved and it sends an event to MainTask by "MainTask::getInstance()->postEvent(...)"
 
 
 ### Contributions and Thanks
